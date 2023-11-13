@@ -1,0 +1,2212 @@
+{
+  "collection": {
+    "_": {
+      "postman_id": "400db99a-9230-475e-b4d9-b6f46504d0bc"
+    },
+    "item": [
+      {
+        "id": "f2bf9081-32e5-437b-a81e-7bf14c4db79c",
+        "name": "create_user_1",
+        "request": {
+          "url": {
+            "protocol": "http",
+            "port": "8008",
+            "path": [
+              "_matrix",
+              "client",
+              "r0",
+              "register"
+            ],
+            "host": [
+              "localhost"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"username\": \"user1\",\r\n    \"password\": \"password\",\r\n    \"auth\": {\"type\":\"m.login.dummy\"}\r\n}"
+          }
+        },
+        "response": [],
+        "event": [],
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        }
+      },
+      {
+        "id": "6effe193-f1ef-4ef9-a445-5a0f31a2fb97",
+        "name": "create_user_2",
+        "request": {
+          "url": {
+            "protocol": "http",
+            "port": "8008",
+            "path": [
+              "_matrix",
+              "client",
+              "r0",
+              "register"
+            ],
+            "host": [
+              "localhost"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"username\": \"user2\",\r\n    \"password\": \"password\",\r\n    \"auth\": {\"type\":\"m.login.dummy\"}\r\n}"
+          }
+        },
+        "response": [],
+        "event": [],
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        }
+      },
+      {
+        "id": "c06b69ef-a9dd-407e-9807-a6aba90eaf6d",
+        "name": "create_user_3",
+        "request": {
+          "url": {
+            "protocol": "http",
+            "port": "8008",
+            "path": [
+              "_matrix",
+              "client",
+              "r0",
+              "register"
+            ],
+            "host": [
+              "localhost"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"username\": \"user3\",\r\n    \"password\": \"password\",\r\n    \"auth\": {\"type\":\"m.login.dummy\"}\r\n}"
+          }
+        },
+        "response": [],
+        "event": [],
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        }
+      },
+      {
+        "id": "a89fa9af-c830-4a17-8646-eb3037e8b8dc",
+        "name": "create_user_4",
+        "request": {
+          "url": {
+            "protocol": "http",
+            "port": "8008",
+            "path": [
+              "_matrix",
+              "client",
+              "r0",
+              "register"
+            ],
+            "host": [
+              "localhost"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"username\": \"user4\",\r\n    \"password\": \"password\",\r\n    \"auth\": {\"type\":\"m.login.dummy\"}\r\n}"
+          }
+        },
+        "response": [],
+        "event": [],
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        }
+      },
+      {
+        "id": "36cf8a0c-82fc-499e-9348-8932dbbb4438",
+        "name": "login_user_1",
+        "request": {
+          "url": {
+            "protocol": "http",
+            "port": "8008",
+            "path": [
+              "_matrix",
+              "client",
+              "v3",
+              "login"
+            ],
+            "host": [
+              "localhost"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"type\": \"m.login.password\",\r\n    \"identifier\": {\r\n        \"type\": \"m.id.user\",\r\n        \"user\": \"@user1:my.matrix.host\"\r\n    },\r\n    \"password\": \"password\"\r\n}"
+          }
+        },
+        "response": [],
+        "event": [],
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        }
+      },
+      {
+        "id": "52b45d5d-27b3-426b-b9d6-956f81d3adf4",
+        "name": "login_user_2",
+        "request": {
+          "url": {
+            "protocol": "http",
+            "port": "8008",
+            "path": [
+              "_matrix",
+              "client",
+              "v3",
+              "login"
+            ],
+            "host": [
+              "localhost"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"type\": \"m.login.password\",\r\n    \"identifier\": {\r\n        \"type\": \"m.id.user\",\r\n        \"user\": \"@user2:my.matrix.host\"\r\n    },\r\n    \"password\": \"password\"\r\n}"
+          }
+        },
+        "response": [],
+        "event": [],
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        }
+      },
+      {
+        "id": "52050e8d-9c1e-47c0-b979-76f930c57669",
+        "name": "login_user_3",
+        "request": {
+          "url": {
+            "protocol": "http",
+            "port": "8008",
+            "path": [
+              "_matrix",
+              "client",
+              "v3",
+              "login"
+            ],
+            "host": [
+              "localhost"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"type\": \"m.login.password\",\r\n    \"identifier\": {\r\n        \"type\": \"m.id.user\",\r\n        \"user\": \"@user3:my.matrix.host\"\r\n    },\r\n    \"password\": \"password\"\r\n}"
+          }
+        },
+        "response": [],
+        "event": [],
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        }
+      },
+      {
+        "id": "769b6e7d-d39d-4313-b25e-4fef3c9f1b9f",
+        "name": "login_user_4",
+        "request": {
+          "url": {
+            "protocol": "http",
+            "port": "8008",
+            "path": [
+              "_matrix",
+              "client",
+              "v3",
+              "login"
+            ],
+            "host": [
+              "localhost"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"type\": \"m.login.password\",\r\n    \"identifier\": {\r\n        \"type\": \"m.id.user\",\r\n        \"user\": \"@user4:my.matrix.host\"\r\n    },\r\n    \"password\": \"password\"\r\n}"
+          }
+        },
+        "response": [],
+        "event": [],
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        }
+      }
+    ],
+    "event": [],
+    "variable": [],
+    "info": {
+      "_postman_id": "400db99a-9230-475e-b4d9-b6f46504d0bc",
+      "name": "Create_environment",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    }
+  },
+  "environment": {
+    "id": "6e4f66d0-cfc5-4958-92af-d58293e7b9f2",
+    "values": []
+  },
+  "globals": {
+    "id": "387a738a-2b86-4399-b533-731aabcb0847",
+    "values": []
+  },
+  "run": {
+    "stats": {
+      "iterations": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "items": {
+        "total": 8,
+        "pending": 0,
+        "failed": 0
+      },
+      "scripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequests": {
+        "total": 8,
+        "pending": 0,
+        "failed": 0
+      },
+      "requests": {
+        "total": 8,
+        "pending": 0,
+        "failed": 0
+      },
+      "tests": {
+        "total": 8,
+        "pending": 0,
+        "failed": 0
+      },
+      "assertions": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "testScripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequestScripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      }
+    },
+    "timings": {
+      "responseAverage": 7.625,
+      "responseMin": 5,
+      "responseMax": 17,
+      "responseSd": 3.672107705392095,
+      "dnsAverage": 0,
+      "dnsMin": 0,
+      "dnsMax": 0,
+      "dnsSd": 0,
+      "firstByteAverage": 0,
+      "firstByteMin": 0,
+      "firstByteMax": 0,
+      "firstByteSd": 0,
+      "started": 1699819046834,
+      "completed": 1699819047570
+    },
+    "executions": [
+      {
+        "cursor": {
+          "position": 0,
+          "iteration": 0,
+          "length": 8,
+          "cycles": 1,
+          "empty": false,
+          "eof": false,
+          "bof": true,
+          "cr": false,
+          "ref": "2e773399-2ec8-4363-8cf1-a025f1bdf331",
+          "httpRequestId": "288acc05-1589-4ef6-ae14-d1270a871184"
+        },
+        "item": {
+          "id": "f2bf9081-32e5-437b-a81e-7bf14c4db79c",
+          "name": "create_user_1",
+          "request": {
+            "url": {
+              "protocol": "http",
+              "port": "8008",
+              "path": [
+                "_matrix",
+                "client",
+                "r0",
+                "register"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\": \"user1\",\r\n    \"password\": \"password\",\r\n    \"auth\": {\"type\":\"m.login.dummy\"}\r\n}"
+            }
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        "request": {
+          "url": {
+            "protocol": "http",
+            "port": "8008",
+            "path": [
+              "_matrix",
+              "client",
+              "r0",
+              "register"
+            ],
+            "host": [
+              "localhost"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain",
+              "system": true
+            },
+            {
+              "key": "User-Agent",
+              "value": "PostmanRuntime/7.33.0",
+              "system": true
+            },
+            {
+              "key": "Accept",
+              "value": "*/*",
+              "system": true
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache",
+              "system": true
+            },
+            {
+              "key": "Postman-Token",
+              "value": "c0acb297-c029-4de9-8852-52ac6898c31b",
+              "system": true
+            },
+            {
+              "key": "Host",
+              "value": "localhost:8008",
+              "system": true
+            },
+            {
+              "key": "Accept-Encoding",
+              "value": "gzip, deflate, br",
+              "system": true
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive",
+              "system": true
+            },
+            {
+              "key": "Content-Length",
+              "value": "97",
+              "system": true
+            }
+          ],
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"username\": \"user1\",\r\n    \"password\": \"password\",\r\n    \"auth\": {\"type\":\"m.login.dummy\"}\r\n}"
+          }
+        },
+        "response": {
+          "id": "79c163f4-c7ad-45bf-a8d2-1e9de7a35ad0",
+          "status": "Bad Request",
+          "code": 400,
+          "header": [
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Server",
+              "value": "Synapse/1.94.0"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 12 Nov 2023 19:57:26 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, must-revalidate"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, HEAD, POST, PUT, DELETE, OPTIONS"
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "X-Requested-With, Content-Type, Authorization, Date"
+            },
+            {
+              "key": "Access-Control-Expose-Headers",
+              "value": "Synapse-Trace-Id, Server"
+            }
+          ],
+          "stream": {
+            "type": "Buffer",
+            "data": [
+              123,
+              34,
+              101,
+              114,
+              114,
+              99,
+              111,
+              100,
+              101,
+              34,
+              58,
+              34,
+              77,
+              95,
+              85,
+              83,
+              69,
+              82,
+              95,
+              73,
+              78,
+              95,
+              85,
+              83,
+              69,
+              34,
+              44,
+              34,
+              101,
+              114,
+              114,
+              111,
+              114,
+              34,
+              58,
+              34,
+              85,
+              115,
+              101,
+              114,
+              32,
+              73,
+              68,
+              32,
+              97,
+              108,
+              114,
+              101,
+              97,
+              100,
+              121,
+              32,
+              116,
+              97,
+              107,
+              101,
+              110,
+              46,
+              34,
+              125
+            ]
+          },
+          "cookie": [],
+          "responseTime": 17,
+          "responseSize": 60
+        },
+        "id": "f2bf9081-32e5-437b-a81e-7bf14c4db79c"
+      },
+      {
+        "cursor": {
+          "ref": "856efa20-ca08-4770-be60-d31f7597ad8f",
+          "length": 8,
+          "cycles": 1,
+          "position": 1,
+          "iteration": 0,
+          "httpRequestId": "b5fa338c-888a-4145-9cf3-8cd410082399"
+        },
+        "item": {
+          "id": "6effe193-f1ef-4ef9-a445-5a0f31a2fb97",
+          "name": "create_user_2",
+          "request": {
+            "url": {
+              "protocol": "http",
+              "port": "8008",
+              "path": [
+                "_matrix",
+                "client",
+                "r0",
+                "register"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\": \"user2\",\r\n    \"password\": \"password\",\r\n    \"auth\": {\"type\":\"m.login.dummy\"}\r\n}"
+            }
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        "request": {
+          "url": {
+            "protocol": "http",
+            "port": "8008",
+            "path": [
+              "_matrix",
+              "client",
+              "r0",
+              "register"
+            ],
+            "host": [
+              "localhost"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain",
+              "system": true
+            },
+            {
+              "key": "User-Agent",
+              "value": "PostmanRuntime/7.33.0",
+              "system": true
+            },
+            {
+              "key": "Accept",
+              "value": "*/*",
+              "system": true
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache",
+              "system": true
+            },
+            {
+              "key": "Postman-Token",
+              "value": "53bdd807-e525-4b62-8745-82f9adc7530e",
+              "system": true
+            },
+            {
+              "key": "Host",
+              "value": "localhost:8008",
+              "system": true
+            },
+            {
+              "key": "Accept-Encoding",
+              "value": "gzip, deflate, br",
+              "system": true
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive",
+              "system": true
+            },
+            {
+              "key": "Content-Length",
+              "value": "97",
+              "system": true
+            }
+          ],
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"username\": \"user2\",\r\n    \"password\": \"password\",\r\n    \"auth\": {\"type\":\"m.login.dummy\"}\r\n}"
+          }
+        },
+        "response": {
+          "id": "c7ec337f-169f-4c8e-95ea-09183cff8e61",
+          "status": "Bad Request",
+          "code": 400,
+          "header": [
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Server",
+              "value": "Synapse/1.94.0"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 12 Nov 2023 19:57:27 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, must-revalidate"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, HEAD, POST, PUT, DELETE, OPTIONS"
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "X-Requested-With, Content-Type, Authorization, Date"
+            },
+            {
+              "key": "Access-Control-Expose-Headers",
+              "value": "Synapse-Trace-Id, Server"
+            }
+          ],
+          "stream": {
+            "type": "Buffer",
+            "data": [
+              123,
+              34,
+              101,
+              114,
+              114,
+              99,
+              111,
+              100,
+              101,
+              34,
+              58,
+              34,
+              77,
+              95,
+              85,
+              83,
+              69,
+              82,
+              95,
+              73,
+              78,
+              95,
+              85,
+              83,
+              69,
+              34,
+              44,
+              34,
+              101,
+              114,
+              114,
+              111,
+              114,
+              34,
+              58,
+              34,
+              85,
+              115,
+              101,
+              114,
+              32,
+              73,
+              68,
+              32,
+              97,
+              108,
+              114,
+              101,
+              97,
+              100,
+              121,
+              32,
+              116,
+              97,
+              107,
+              101,
+              110,
+              46,
+              34,
+              125
+            ]
+          },
+          "cookie": [],
+          "responseTime": 8,
+          "responseSize": 60
+        },
+        "id": "6effe193-f1ef-4ef9-a445-5a0f31a2fb97"
+      },
+      {
+        "cursor": {
+          "ref": "a98337e4-2c5b-40b8-b8d2-44ba20abb890",
+          "length": 8,
+          "cycles": 1,
+          "position": 2,
+          "iteration": 0,
+          "httpRequestId": "fcbedd25-e408-4446-805d-0f3f958b74cb"
+        },
+        "item": {
+          "id": "c06b69ef-a9dd-407e-9807-a6aba90eaf6d",
+          "name": "create_user_3",
+          "request": {
+            "url": {
+              "protocol": "http",
+              "port": "8008",
+              "path": [
+                "_matrix",
+                "client",
+                "r0",
+                "register"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\": \"user3\",\r\n    \"password\": \"password\",\r\n    \"auth\": {\"type\":\"m.login.dummy\"}\r\n}"
+            }
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        "request": {
+          "url": {
+            "protocol": "http",
+            "port": "8008",
+            "path": [
+              "_matrix",
+              "client",
+              "r0",
+              "register"
+            ],
+            "host": [
+              "localhost"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain",
+              "system": true
+            },
+            {
+              "key": "User-Agent",
+              "value": "PostmanRuntime/7.33.0",
+              "system": true
+            },
+            {
+              "key": "Accept",
+              "value": "*/*",
+              "system": true
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache",
+              "system": true
+            },
+            {
+              "key": "Postman-Token",
+              "value": "d770e589-2e40-4d98-b663-109a25b92f13",
+              "system": true
+            },
+            {
+              "key": "Host",
+              "value": "localhost:8008",
+              "system": true
+            },
+            {
+              "key": "Accept-Encoding",
+              "value": "gzip, deflate, br",
+              "system": true
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive",
+              "system": true
+            },
+            {
+              "key": "Content-Length",
+              "value": "97",
+              "system": true
+            }
+          ],
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"username\": \"user3\",\r\n    \"password\": \"password\",\r\n    \"auth\": {\"type\":\"m.login.dummy\"}\r\n}"
+          }
+        },
+        "response": {
+          "id": "548cddcd-576c-4b90-aa96-e7b063c6bd73",
+          "status": "Bad Request",
+          "code": 400,
+          "header": [
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Server",
+              "value": "Synapse/1.94.0"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 12 Nov 2023 19:57:27 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, must-revalidate"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, HEAD, POST, PUT, DELETE, OPTIONS"
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "X-Requested-With, Content-Type, Authorization, Date"
+            },
+            {
+              "key": "Access-Control-Expose-Headers",
+              "value": "Synapse-Trace-Id, Server"
+            }
+          ],
+          "stream": {
+            "type": "Buffer",
+            "data": [
+              123,
+              34,
+              101,
+              114,
+              114,
+              99,
+              111,
+              100,
+              101,
+              34,
+              58,
+              34,
+              77,
+              95,
+              85,
+              83,
+              69,
+              82,
+              95,
+              73,
+              78,
+              95,
+              85,
+              83,
+              69,
+              34,
+              44,
+              34,
+              101,
+              114,
+              114,
+              111,
+              114,
+              34,
+              58,
+              34,
+              85,
+              115,
+              101,
+              114,
+              32,
+              73,
+              68,
+              32,
+              97,
+              108,
+              114,
+              101,
+              97,
+              100,
+              121,
+              32,
+              116,
+              97,
+              107,
+              101,
+              110,
+              46,
+              34,
+              125
+            ]
+          },
+          "cookie": [],
+          "responseTime": 7,
+          "responseSize": 60
+        },
+        "id": "c06b69ef-a9dd-407e-9807-a6aba90eaf6d"
+      },
+      {
+        "cursor": {
+          "ref": "23ee9daf-004a-41e1-999d-0d5e84081dcd",
+          "length": 8,
+          "cycles": 1,
+          "position": 3,
+          "iteration": 0,
+          "httpRequestId": "85718a11-d8e6-486f-add6-bde0870c2996"
+        },
+        "item": {
+          "id": "a89fa9af-c830-4a17-8646-eb3037e8b8dc",
+          "name": "create_user_4",
+          "request": {
+            "url": {
+              "protocol": "http",
+              "port": "8008",
+              "path": [
+                "_matrix",
+                "client",
+                "r0",
+                "register"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\": \"user4\",\r\n    \"password\": \"password\",\r\n    \"auth\": {\"type\":\"m.login.dummy\"}\r\n}"
+            }
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        "request": {
+          "url": {
+            "protocol": "http",
+            "port": "8008",
+            "path": [
+              "_matrix",
+              "client",
+              "r0",
+              "register"
+            ],
+            "host": [
+              "localhost"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain",
+              "system": true
+            },
+            {
+              "key": "User-Agent",
+              "value": "PostmanRuntime/7.33.0",
+              "system": true
+            },
+            {
+              "key": "Accept",
+              "value": "*/*",
+              "system": true
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache",
+              "system": true
+            },
+            {
+              "key": "Postman-Token",
+              "value": "44aa98b9-4a4d-4ec9-9b36-185b36afa4d1",
+              "system": true
+            },
+            {
+              "key": "Host",
+              "value": "localhost:8008",
+              "system": true
+            },
+            {
+              "key": "Accept-Encoding",
+              "value": "gzip, deflate, br",
+              "system": true
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive",
+              "system": true
+            },
+            {
+              "key": "Content-Length",
+              "value": "97",
+              "system": true
+            }
+          ],
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"username\": \"user4\",\r\n    \"password\": \"password\",\r\n    \"auth\": {\"type\":\"m.login.dummy\"}\r\n}"
+          }
+        },
+        "response": {
+          "id": "6a547c09-7f89-4985-9ee5-1cc3ad3b1d92",
+          "status": "Bad Request",
+          "code": 400,
+          "header": [
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Server",
+              "value": "Synapse/1.94.0"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 12 Nov 2023 19:57:27 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, must-revalidate"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, HEAD, POST, PUT, DELETE, OPTIONS"
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "X-Requested-With, Content-Type, Authorization, Date"
+            },
+            {
+              "key": "Access-Control-Expose-Headers",
+              "value": "Synapse-Trace-Id, Server"
+            }
+          ],
+          "stream": {
+            "type": "Buffer",
+            "data": [
+              123,
+              34,
+              101,
+              114,
+              114,
+              99,
+              111,
+              100,
+              101,
+              34,
+              58,
+              34,
+              77,
+              95,
+              85,
+              83,
+              69,
+              82,
+              95,
+              73,
+              78,
+              95,
+              85,
+              83,
+              69,
+              34,
+              44,
+              34,
+              101,
+              114,
+              114,
+              111,
+              114,
+              34,
+              58,
+              34,
+              85,
+              115,
+              101,
+              114,
+              32,
+              73,
+              68,
+              32,
+              97,
+              108,
+              114,
+              101,
+              97,
+              100,
+              121,
+              32,
+              116,
+              97,
+              107,
+              101,
+              110,
+              46,
+              34,
+              125
+            ]
+          },
+          "cookie": [],
+          "responseTime": 6,
+          "responseSize": 60
+        },
+        "id": "a89fa9af-c830-4a17-8646-eb3037e8b8dc"
+      },
+      {
+        "cursor": {
+          "ref": "e8bdd14c-678a-43df-9c71-b4fd5830b4ee",
+          "length": 8,
+          "cycles": 1,
+          "position": 4,
+          "iteration": 0,
+          "httpRequestId": "6fc1b1f7-172c-422a-b4c9-2ac012d59607"
+        },
+        "item": {
+          "id": "36cf8a0c-82fc-499e-9348-8932dbbb4438",
+          "name": "login_user_1",
+          "request": {
+            "url": {
+              "protocol": "http",
+              "port": "8008",
+              "path": [
+                "_matrix",
+                "client",
+                "v3",
+                "login"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"type\": \"m.login.password\",\r\n    \"identifier\": {\r\n        \"type\": \"m.id.user\",\r\n        \"user\": \"@user1:my.matrix.host\"\r\n    },\r\n    \"password\": \"password\"\r\n}"
+            }
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        "request": {
+          "url": {
+            "protocol": "http",
+            "port": "8008",
+            "path": [
+              "_matrix",
+              "client",
+              "v3",
+              "login"
+            ],
+            "host": [
+              "localhost"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain",
+              "system": true
+            },
+            {
+              "key": "User-Agent",
+              "value": "PostmanRuntime/7.33.0",
+              "system": true
+            },
+            {
+              "key": "Accept",
+              "value": "*/*",
+              "system": true
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache",
+              "system": true
+            },
+            {
+              "key": "Postman-Token",
+              "value": "4f40c606-5411-4338-b4a3-450e31316390",
+              "system": true
+            },
+            {
+              "key": "Host",
+              "value": "localhost:8008",
+              "system": true
+            },
+            {
+              "key": "Accept-Encoding",
+              "value": "gzip, deflate, br",
+              "system": true
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive",
+              "system": true
+            },
+            {
+              "key": "Content-Length",
+              "value": "165",
+              "system": true
+            }
+          ],
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"type\": \"m.login.password\",\r\n    \"identifier\": {\r\n        \"type\": \"m.id.user\",\r\n        \"user\": \"@user1:my.matrix.host\"\r\n    },\r\n    \"password\": \"password\"\r\n}"
+          }
+        },
+        "response": {
+          "id": "651da781-3099-453f-8e87-793cbbb4797a",
+          "status": "Unknown Status",
+          "code": 429,
+          "header": [
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Server",
+              "value": "Synapse/1.94.0"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 12 Nov 2023 19:57:27 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, must-revalidate"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, HEAD, POST, PUT, DELETE, OPTIONS"
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "X-Requested-With, Content-Type, Authorization, Date"
+            },
+            {
+              "key": "Access-Control-Expose-Headers",
+              "value": "Synapse-Trace-Id, Server"
+            }
+          ],
+          "stream": {
+            "type": "Buffer",
+            "data": [
+              123,
+              34,
+              101,
+              114,
+              114,
+              99,
+              111,
+              100,
+              101,
+              34,
+              58,
+              34,
+              77,
+              95,
+              76,
+              73,
+              77,
+              73,
+              84,
+              95,
+              69,
+              88,
+              67,
+              69,
+              69,
+              68,
+              69,
+              68,
+              34,
+              44,
+              34,
+              101,
+              114,
+              114,
+              111,
+              114,
+              34,
+              58,
+              34,
+              84,
+              111,
+              111,
+              32,
+              77,
+              97,
+              110,
+              121,
+              32,
+              82,
+              101,
+              113,
+              117,
+              101,
+              115,
+              116,
+              115,
+              34,
+              44,
+              34,
+              114,
+              101,
+              116,
+              114,
+              121,
+              95,
+              97,
+              102,
+              116,
+              101,
+              114,
+              95,
+              109,
+              115,
+              34,
+              58,
+              50,
+              53,
+              56,
+              49,
+              50,
+              49,
+              125
+            ]
+          },
+          "cookie": [],
+          "responseTime": 5,
+          "responseSize": 82
+        },
+        "id": "36cf8a0c-82fc-499e-9348-8932dbbb4438"
+      },
+      {
+        "cursor": {
+          "ref": "6c19aac6-a966-475f-99d5-2e0a7dc1d906",
+          "length": 8,
+          "cycles": 1,
+          "position": 5,
+          "iteration": 0,
+          "httpRequestId": "f6d838ae-2a10-4c83-bfa0-7153678e45d2"
+        },
+        "item": {
+          "id": "52b45d5d-27b3-426b-b9d6-956f81d3adf4",
+          "name": "login_user_2",
+          "request": {
+            "url": {
+              "protocol": "http",
+              "port": "8008",
+              "path": [
+                "_matrix",
+                "client",
+                "v3",
+                "login"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"type\": \"m.login.password\",\r\n    \"identifier\": {\r\n        \"type\": \"m.id.user\",\r\n        \"user\": \"@user2:my.matrix.host\"\r\n    },\r\n    \"password\": \"password\"\r\n}"
+            }
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        "request": {
+          "url": {
+            "protocol": "http",
+            "port": "8008",
+            "path": [
+              "_matrix",
+              "client",
+              "v3",
+              "login"
+            ],
+            "host": [
+              "localhost"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain",
+              "system": true
+            },
+            {
+              "key": "User-Agent",
+              "value": "PostmanRuntime/7.33.0",
+              "system": true
+            },
+            {
+              "key": "Accept",
+              "value": "*/*",
+              "system": true
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache",
+              "system": true
+            },
+            {
+              "key": "Postman-Token",
+              "value": "f3a3eaae-a4a5-456f-8b96-1f6e43da62c2",
+              "system": true
+            },
+            {
+              "key": "Host",
+              "value": "localhost:8008",
+              "system": true
+            },
+            {
+              "key": "Accept-Encoding",
+              "value": "gzip, deflate, br",
+              "system": true
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive",
+              "system": true
+            },
+            {
+              "key": "Content-Length",
+              "value": "165",
+              "system": true
+            }
+          ],
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"type\": \"m.login.password\",\r\n    \"identifier\": {\r\n        \"type\": \"m.id.user\",\r\n        \"user\": \"@user2:my.matrix.host\"\r\n    },\r\n    \"password\": \"password\"\r\n}"
+          }
+        },
+        "response": {
+          "id": "cae3fb25-97c4-487b-8177-361357338120",
+          "status": "Unknown Status",
+          "code": 429,
+          "header": [
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Server",
+              "value": "Synapse/1.94.0"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 12 Nov 2023 19:57:27 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, must-revalidate"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, HEAD, POST, PUT, DELETE, OPTIONS"
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "X-Requested-With, Content-Type, Authorization, Date"
+            },
+            {
+              "key": "Access-Control-Expose-Headers",
+              "value": "Synapse-Trace-Id, Server"
+            }
+          ],
+          "stream": {
+            "type": "Buffer",
+            "data": [
+              123,
+              34,
+              101,
+              114,
+              114,
+              99,
+              111,
+              100,
+              101,
+              34,
+              58,
+              34,
+              77,
+              95,
+              76,
+              73,
+              77,
+              73,
+              84,
+              95,
+              69,
+              88,
+              67,
+              69,
+              69,
+              68,
+              69,
+              68,
+              34,
+              44,
+              34,
+              101,
+              114,
+              114,
+              111,
+              114,
+              34,
+              58,
+              34,
+              84,
+              111,
+              111,
+              32,
+              77,
+              97,
+              110,
+              121,
+              32,
+              82,
+              101,
+              113,
+              117,
+              101,
+              115,
+              116,
+              115,
+              34,
+              44,
+              34,
+              114,
+              101,
+              116,
+              114,
+              121,
+              95,
+              97,
+              102,
+              116,
+              101,
+              114,
+              95,
+              109,
+              115,
+              34,
+              58,
+              50,
+              53,
+              56,
+              48,
+              52,
+              51,
+              125
+            ]
+          },
+          "cookie": [],
+          "responseTime": 6,
+          "responseSize": 82
+        },
+        "id": "52b45d5d-27b3-426b-b9d6-956f81d3adf4"
+      },
+      {
+        "cursor": {
+          "ref": "b505975c-33c3-49ff-999a-f168b4aa4fdd",
+          "length": 8,
+          "cycles": 1,
+          "position": 6,
+          "iteration": 0,
+          "httpRequestId": "65a861b2-caac-4d01-a334-6157e5a32530"
+        },
+        "item": {
+          "id": "52050e8d-9c1e-47c0-b979-76f930c57669",
+          "name": "login_user_3",
+          "request": {
+            "url": {
+              "protocol": "http",
+              "port": "8008",
+              "path": [
+                "_matrix",
+                "client",
+                "v3",
+                "login"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"type\": \"m.login.password\",\r\n    \"identifier\": {\r\n        \"type\": \"m.id.user\",\r\n        \"user\": \"@user3:my.matrix.host\"\r\n    },\r\n    \"password\": \"password\"\r\n}"
+            }
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        "request": {
+          "url": {
+            "protocol": "http",
+            "port": "8008",
+            "path": [
+              "_matrix",
+              "client",
+              "v3",
+              "login"
+            ],
+            "host": [
+              "localhost"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain",
+              "system": true
+            },
+            {
+              "key": "User-Agent",
+              "value": "PostmanRuntime/7.33.0",
+              "system": true
+            },
+            {
+              "key": "Accept",
+              "value": "*/*",
+              "system": true
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache",
+              "system": true
+            },
+            {
+              "key": "Postman-Token",
+              "value": "b0046661-2394-40eb-85b6-b130080c2498",
+              "system": true
+            },
+            {
+              "key": "Host",
+              "value": "localhost:8008",
+              "system": true
+            },
+            {
+              "key": "Accept-Encoding",
+              "value": "gzip, deflate, br",
+              "system": true
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive",
+              "system": true
+            },
+            {
+              "key": "Content-Length",
+              "value": "165",
+              "system": true
+            }
+          ],
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"type\": \"m.login.password\",\r\n    \"identifier\": {\r\n        \"type\": \"m.id.user\",\r\n        \"user\": \"@user3:my.matrix.host\"\r\n    },\r\n    \"password\": \"password\"\r\n}"
+          }
+        },
+        "response": {
+          "id": "ecf3d8be-8c31-488e-8b5b-8b225502b4f9",
+          "status": "Unknown Status",
+          "code": 429,
+          "header": [
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Server",
+              "value": "Synapse/1.94.0"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 12 Nov 2023 19:57:27 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, must-revalidate"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, HEAD, POST, PUT, DELETE, OPTIONS"
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "X-Requested-With, Content-Type, Authorization, Date"
+            },
+            {
+              "key": "Access-Control-Expose-Headers",
+              "value": "Synapse-Trace-Id, Server"
+            }
+          ],
+          "stream": {
+            "type": "Buffer",
+            "data": [
+              123,
+              34,
+              101,
+              114,
+              114,
+              99,
+              111,
+              100,
+              101,
+              34,
+              58,
+              34,
+              77,
+              95,
+              76,
+              73,
+              77,
+              73,
+              84,
+              95,
+              69,
+              88,
+              67,
+              69,
+              69,
+              68,
+              69,
+              68,
+              34,
+              44,
+              34,
+              101,
+              114,
+              114,
+              111,
+              114,
+              34,
+              58,
+              34,
+              84,
+              111,
+              111,
+              32,
+              77,
+              97,
+              110,
+              121,
+              32,
+              82,
+              101,
+              113,
+              117,
+              101,
+              115,
+              116,
+              115,
+              34,
+              44,
+              34,
+              114,
+              101,
+              116,
+              114,
+              121,
+              95,
+              97,
+              102,
+              116,
+              101,
+              114,
+              95,
+              109,
+              115,
+              34,
+              58,
+              50,
+              53,
+              55,
+              57,
+              53,
+              50,
+              125
+            ]
+          },
+          "cookie": [],
+          "responseTime": 7,
+          "responseSize": 82
+        },
+        "id": "52050e8d-9c1e-47c0-b979-76f930c57669"
+      },
+      {
+        "cursor": {
+          "ref": "95dd161d-94ba-4294-8d29-cd08d17657ad",
+          "length": 8,
+          "cycles": 1,
+          "position": 7,
+          "iteration": 0,
+          "httpRequestId": "c3666647-a867-44bc-9198-2df67c5cf46a"
+        },
+        "item": {
+          "id": "769b6e7d-d39d-4313-b25e-4fef3c9f1b9f",
+          "name": "login_user_4",
+          "request": {
+            "url": {
+              "protocol": "http",
+              "port": "8008",
+              "path": [
+                "_matrix",
+                "client",
+                "v3",
+                "login"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"type\": \"m.login.password\",\r\n    \"identifier\": {\r\n        \"type\": \"m.id.user\",\r\n        \"user\": \"@user4:my.matrix.host\"\r\n    },\r\n    \"password\": \"password\"\r\n}"
+            }
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        "request": {
+          "url": {
+            "protocol": "http",
+            "port": "8008",
+            "path": [
+              "_matrix",
+              "client",
+              "v3",
+              "login"
+            ],
+            "host": [
+              "localhost"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain",
+              "system": true
+            },
+            {
+              "key": "User-Agent",
+              "value": "PostmanRuntime/7.33.0",
+              "system": true
+            },
+            {
+              "key": "Accept",
+              "value": "*/*",
+              "system": true
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache",
+              "system": true
+            },
+            {
+              "key": "Postman-Token",
+              "value": "7eddf854-fa9c-4460-a527-e6b16ac0446c",
+              "system": true
+            },
+            {
+              "key": "Host",
+              "value": "localhost:8008",
+              "system": true
+            },
+            {
+              "key": "Accept-Encoding",
+              "value": "gzip, deflate, br",
+              "system": true
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive",
+              "system": true
+            },
+            {
+              "key": "Content-Length",
+              "value": "165",
+              "system": true
+            }
+          ],
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"type\": \"m.login.password\",\r\n    \"identifier\": {\r\n        \"type\": \"m.id.user\",\r\n        \"user\": \"@user4:my.matrix.host\"\r\n    },\r\n    \"password\": \"password\"\r\n}"
+          }
+        },
+        "response": {
+          "id": "74afc4fa-3a09-41b6-b7e2-2b09ba027d4b",
+          "status": "Unknown Status",
+          "code": 429,
+          "header": [
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Server",
+              "value": "Synapse/1.94.0"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 12 Nov 2023 19:57:27 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, must-revalidate"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, HEAD, POST, PUT, DELETE, OPTIONS"
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "X-Requested-With, Content-Type, Authorization, Date"
+            },
+            {
+              "key": "Access-Control-Expose-Headers",
+              "value": "Synapse-Trace-Id, Server"
+            }
+          ],
+          "stream": {
+            "type": "Buffer",
+            "data": [
+              123,
+              34,
+              101,
+              114,
+              114,
+              99,
+              111,
+              100,
+              101,
+              34,
+              58,
+              34,
+              77,
+              95,
+              76,
+              73,
+              77,
+              73,
+              84,
+              95,
+              69,
+              88,
+              67,
+              69,
+              69,
+              68,
+              69,
+              68,
+              34,
+              44,
+              34,
+              101,
+              114,
+              114,
+              111,
+              114,
+              34,
+              58,
+              34,
+              84,
+              111,
+              111,
+              32,
+              77,
+              97,
+              110,
+              121,
+              32,
+              82,
+              101,
+              113,
+              117,
+              101,
+              115,
+              116,
+              115,
+              34,
+              44,
+              34,
+              114,
+              101,
+              116,
+              114,
+              121,
+              95,
+              97,
+              102,
+              116,
+              101,
+              114,
+              95,
+              109,
+              115,
+              34,
+              58,
+              50,
+              53,
+              55,
+              56,
+              53,
+              55,
+              125
+            ]
+          },
+          "cookie": [],
+          "responseTime": 5,
+          "responseSize": 82
+        },
+        "id": "769b6e7d-d39d-4313-b25e-4fef3c9f1b9f"
+      }
+    ],
+    "transfers": {
+      "responseTotal": 568
+    },
+    "failures": [],
+    "error": null
+  }
+}

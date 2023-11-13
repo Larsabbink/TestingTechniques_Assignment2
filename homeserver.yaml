@@ -1,0 +1,50 @@
+# Configuration file for Synapse.
+#
+# This is a YAML file: see [1] for a quick introduction. Note in particular
+# that *indentation is important*: all the elements of a list or dictionary
+# should have the same indentation.
+#
+# [1] https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
+#
+# For more information on how to configure Synapse, including a complete accounting of
+# each option, go to docs/usage/configuration/config_documentation.md or
+# https://matrix-org.github.io/synapse/latest/usage/configuration/config_documentation.html
+server_name: "my.matrix.host"
+pid_file: /data/homeserver.pid
+listeners:
+  - port: 8008
+    tls: false
+    type: http
+    x_forwarded: true
+    resources:
+      - names: [client, federation]
+        compress: false
+database:
+  name: sqlite3
+  args:
+    database: /data/homeserver.db
+log_config: "/data/logs/my.matrix.host.log.config"
+media_store_path: /data/media_store
+registration_shared_secret: "tQ~^xd:1lXDoYdb2VTwM^FOz#0Cre,.@h0N4N^zg-1Ay8*1dUY"
+report_stats: true
+macaroon_secret_key: "Kcn0xGKttS_A+I4ON2wn4u6tO+BpICEP9L1F.OEgn=_HGld&jq"
+form_secret: "jZOIl#W3T;ZGF3d;hNL@eZF80b,+uSI@~E@B,K3hyqdL_1XVuq"
+signing_key_path: "/data/my.matrix.host.signing.key"
+trusted_key_servers:
+  - server_name: "matrix.org"
+enable_registration: true
+enable_registration_without_verification: true
+# Increase rate limit of login such that we can send more requests without the server stopping  it
+rc_login:
+  address:
+    per_second: 0.15
+    burst_count: 5
+  account:
+    per_second: 0.25
+    burst_count: 5
+  failed_attempts:
+    per_second: 0.19
+    burst_count: 7
+
+
+# vim:ft=yaml
