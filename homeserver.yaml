@@ -23,7 +23,7 @@ database:
   name: sqlite3
   args:
     database: /data/homeserver.db
-log_config: "/data/logs/my.matrix.host.log.config"
+log_config: "/my.matrix.host.log.config"
 media_store_path: /data/media_store
 registration_shared_secret: "tQ~^xd:1lXDoYdb2VTwM^FOz#0Cre,.@h0N4N^zg-1Ay8*1dUY"
 report_stats: true
@@ -34,7 +34,7 @@ trusted_key_servers:
   - server_name: "matrix.org"
 enable_registration: true
 enable_registration_without_verification: true
-# Increase rate limit of login such that we can send more requests without the server stopping  it
+# Increase rate limit of login such that we can send more requests without the server stopping it
 rc_login:
   address:
     per_second: 0.15

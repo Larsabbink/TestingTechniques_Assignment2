@@ -1,8 +1,7 @@
 FROM matrixdotorg/synapse:latest
 
+# RUN mkdir /data
+# RUN mkdir /data/logs
+# RUN chmod -R 777 /data
+
 COPY homeserver.yaml /data/homeserver.yaml
-
-COPY create_rooms_and_users.sh /scripts/create_rooms_and_users.sh
-RUN chmod +x /scripts/create_rooms_and_users.sh
-
-# CMD ["/data/create_rooms_and_users.sh"]s
