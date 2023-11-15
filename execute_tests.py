@@ -4,10 +4,10 @@ import subprocess
 from dotenv import load_dotenv
 
 TESTS = ['Registration', 'Login', 
-         'Send message', 'Change Password', 
-         'Deactivate Account', 'Event closest to timestamp',
-         'Reporting Content', 'Presence',
-         'Creating Rooms', 'Banning/Deleting users'
+         'Send_message', 'Change_Password', 
+         'Deactivate_Account', 'Event_closest_to_timestamp',
+         'Reporting_Content', 'Presence',
+         'Creating_Rooms', 'Banning/Deleting_users'
          ]
 
 COLLECTION_IDS = {
