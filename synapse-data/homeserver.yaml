@@ -1,0 +1,44 @@
+# Configuration file for Synapse.
+#
+# This is a YAML file: see [1] for a quick introduction. Note in particular
+# that *indentation is important*: all the elements of a list or dictionary
+# should have the same indentation.
+#
+# [1] https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
+#
+# For more information on how to configure Synapse, including a complete accounting of
+# each option, go to docs/usage/configuration/config_documentation.md or
+# https://matrix-org.github.io/synapse/latest/usage/configuration/config_documentation.html
+server_name: "my.matrix.host"
+pid_file: /data/homeserver.pid
+listeners:
+  - port: 8008
+    tls: false
+    type: http
+    x_forwarded: true
+    resources:
+      - names: [client, federation]
+        compress: false
+database:
+  name: sqlite3
+  args:
+    database: /data/homeserver.db
+log_config: "/data/test.matrix.host.log.config"
+media_store_path: /data/media_store
+registration_shared_secret: "O,YQDs#@;wubj#Q&4:ASa4zcqGn5Wng7gax=ET#ApkL^HT^BVT"
+enable_registration: true
+enable_registration_without_verification: true
+report_stats: false
+macaroon_secret_key: "g@l-^0sxZK&SjzO6tT,2iT,.^EGunkRqd4Mx&ogoruffVwaFQe"
+form_secret: "2fi&~l5DIoyfwB#d7~a,:.lM6AWzadWCnzI*Wud=m_^&cPWwHP"
+signing_key_path: "/data/test.matrix.host.signing.key"
+trusted_key_servers:
+  - server_name: "matrix.org"
+
+rc_registration:
+  per_second: 100
+  burst_count: 22
+
+
+
+# vim:ft=yaml
