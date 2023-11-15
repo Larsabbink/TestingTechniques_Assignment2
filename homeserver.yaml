@@ -35,16 +35,19 @@ trusted_key_servers:
 enable_registration: true
 enable_registration_without_verification: true
 # Increase rate limit of login such that we can send more requests without the server stopping it
+rc_registration:
+  per_second: 100
+  burst_count: 50
 rc_login:
   address:
-    per_second: 0.15
-    burst_count: 5
+    per_second: 100
+    burst_count: 50
   account:
-    per_second: 0.25
-    burst_count: 5
+    per_second: 100
+    burst_count: 50
   failed_attempts:
-    per_second: 0.19
-    burst_count: 7
+    per_second: 100
+    burst_count: 50
 
 
 # vim:ft=yaml

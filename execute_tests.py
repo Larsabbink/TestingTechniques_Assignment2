@@ -7,7 +7,7 @@ TESTS = ['Registration', 'Login',
          'Send_message', 'Change_Password', 
          'Deactivate_Account', 'Event_closest_to_timestamp',
          'Reporting_Content', 'Presence',
-         'Creating_Rooms', 'Banning/Deleting_users'
+         'Creating_Rooms', 'Banning_Deleting_users'
          ]
 
 COLLECTION_IDS = {
