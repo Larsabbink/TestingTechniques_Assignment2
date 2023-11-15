@@ -41,7 +41,7 @@ def run_collection(collection_id, folder_name = None):
 def run_tests():
     current_time = datetime.now()
     folder_name = current_time.strftime("%d-%m-%Y-%H-%M-%S")
-    os.mkdir(f'./logs/{folder_name}')
+    os.makedirs(f'./logs/{folder_name}')
 
     for test in TESTS:
         reset_database()
