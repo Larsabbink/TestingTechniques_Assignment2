@@ -54,7 +54,5 @@ def run_tests():
         with open(f'./logs/{folder_name}/{test}.txt', 'w') as file:
             file.write(output.decode('utf-8'))
 
-        break
-
 if __name__ == "__main__":
     run_tests()
