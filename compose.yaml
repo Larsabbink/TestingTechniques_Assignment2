@@ -1,15 +1,8 @@
 services:
   server:
-    build: .
-    container_name: synapse_test
+    image: matrixdotorg/synapse:latest
+    container_name: synapse
     ports:
       - "8008:8008"
     volumes:
       - ./synapse-data:/data
-  cleanup:
-    image: alpine:latest
-    volumes:
-      - ./synapse-data:/data
-    command: ["/bin/sh", "-c", "rm -f /data/homeserver.db"]
-    depends_on:
-      - server
