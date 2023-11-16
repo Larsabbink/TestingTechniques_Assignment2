@@ -29,6 +29,8 @@ def run_collection(collection_id, folder_name = None):
     command = f"npx newman run {url} --disable-unicode"
     if folder_name:
         command += f" --folder {folder_name}"
+
+    
     
     result = subprocess.Popen(command.split(' '), shell=True, stdout=subprocess.PIPE)
     output, error = result.communicate()
